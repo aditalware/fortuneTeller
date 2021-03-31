@@ -225,7 +225,7 @@ body::-webkit-scrollbar-thumb {
   .start{
     width: 282px;
     height: 282px;
-    background-image: url(startnew.jpg);
+    background-image: url("startnew.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 160px;
@@ -274,7 +274,7 @@ body::-webkit-scrollbar-thumb {
     top:1100px;
     left:430px;
     border-radius: 200px;
-    background-image: url(fire.jpg);
+    background-image: url("fire.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     animation: fire 2s,glowfire 3s infinite;
@@ -290,7 +290,7 @@ body::-webkit-scrollbar-thumb {
     top:200px;
     left:30px;
     border-radius: 200px;
-    background-image: url(earth.jpg);
+    background-image: url("earth.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     animation: fire 2s,glowearth 3s infinite;
@@ -307,7 +307,7 @@ body::-webkit-scrollbar-thumb {
     top: 222px;
     right: 30px;
     border-radius: 200px;
-    background-image: url(water.png);
+    background-image: url("water.png");
     background-size: contain;
     background-repeat: no-repeat;
     animation: water 2s,glowwater 3s infinite;
@@ -321,7 +321,7 @@ body::-webkit-scrollbar-thumb {
     top:1100px;
     right:430px;
     border-radius: 150px;
-    background-image: url(air.jpg);
+    background-image: url("air.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     animation: water 2s,glowwater 3s infinite;
@@ -335,7 +335,7 @@ body::-webkit-scrollbar-thumb {
     top:1500px;
     right:1480px;
     border-radius: 150px;
-    background-image: url(star.png);
+    background-image: url("star.png");
     background-size: cover;
     background-repeat: no-repeat;
     animation: star 2s,glowwater 3s infinite;
@@ -350,7 +350,7 @@ body::-webkit-scrollbar-thumb {
     top:1500px;
     right:1480px;
     border-radius: 150px;
-    background-image: url(star.png);
+    background-image: url("star.png");
     background-size: cover;
     background-repeat: no-repeat;
     animation: star 2s,glowwater 3s infinite;
@@ -365,7 +365,7 @@ body::-webkit-scrollbar-thumb {
     top:800px;
     right:280px;
     border-radius: 150px;
-    background-image: url(star.png);
+    background-image: url("star.png");
     background-size: cover;
     background-repeat: no-repeat;
     animation: star 2s,glowwater 3s infinite;
@@ -381,7 +381,7 @@ body::-webkit-scrollbar-thumb {
     top:800px;
     left:280px;
     border-radius: 150px;
-    background-image: url(star.png);
+    background-image: url("star.png");
     background-size: cover;
     background-repeat: no-repeat;
     animation: star 2s,glowwater 3s infinite;
@@ -397,7 +397,7 @@ body::-webkit-scrollbar-thumb {
     top:600px;
     right:1380px;
     border-radius: 150px;
-    background-image: url(spirit.jpg);
+    background-image: url("spirit.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     animation: star 2s,glowwater 3s infinite;
@@ -709,7 +709,7 @@ body::-webkit-scrollbar-thumb {
 .oval .type{
   width: 282px;
   height: 282px;
-  background-image: url(mystery.jfif);
+  background-image: url("mystery.jfif");
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 160px;
@@ -726,7 +726,7 @@ body::-webkit-scrollbar-thumb {
 .oval .photo{
   width: 382px;
   height: 382px;
-  background-image: url(maker.jpg);
+  background-image: url("maker.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 200px;
@@ -828,7 +828,7 @@ body::-webkit-scrollbar-thumb {
   position: absolute;
   width: 50px;
   height: 500pxpx;
-  background-image: url(curves.png);
+  background-image: url("curves.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -902,7 +902,7 @@ body::-webkit-scrollbar-thumb {
 .card-detail-img{
   width: 40%;
   height: 1051px;
-  background-image: url(card1.jpg);
+  background-image: url("card1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
