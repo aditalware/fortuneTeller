@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />       
+		<meta name="keywords" content="" />
+    <meta
+    name="description"
+    content="Web site created using simple html css javascript"
+  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" href="/assets/images/favicon.ico"/>
+
+   
+    <title>Fortune Teller</title>
+  </head>
+  <body>
+    <div id="center_fit">
+
+        <div class="nav">
+            <a class="active" href="index.html" name="a" >Home</a>
+            <a href="explore.html" name="b" >Explore</a>
+            <a href="about.html" name="c" >About</a>
+        </div>
+        <h1 class="heading">Deep dive into fortune telling Experience</h1>
+
+        <div class="initial">
+          
+            <h1 class="headstart">Start</h1>
+            <div class="start" onclick="startDraw()">
+            </div>
+        </div>
+        
+
+        <div class="main">
+             <div class="fire">
+
+             </div>
+             <div class="earth">
+
+            </div>
+            <div class="water">
+
+            </div>
+            <div class="spirit">
+
+            </div>
+            <div class="air">
+
+            </div>
+            <div class="star1">
+
+            </div>
+            <div class="star2">
+
+            </div>
+            <div class="star3">
+
+            </div>
+            <div class="star4">
+
+            </div>
+
+            <div class="pentagon" onclick="startLoading()">
+              <h1 class="headstart" id="spin" style="line-height: 9; margin:0px 86px">Spin</h1>
+            </div>
+
+            <div class="loading" id="load" >
+              <img src="/assets/images/loading.gif" height="200" width="200" />
+            </div>
+            <div class="container">
+                <div class="card" onclick="choseCard(1)" name="1"> </div>
+                <div class="card" onclick="choseCard(2)" name="2"> </div>
+                <div class="card" onclick="choseCard(3)" name="3"> </div>
+                <div class="card" onclick="choseCard(4)" name="4"> </div>
+                <div class="card" onclick="choseCard(5)" name="5"> </div>
+                <div class="card" onclick="choseCard(6)" name="6"> </div>
+                <div class="card" onclick="choseCard(7)" name="7"> </div>
+                <div class="card" onclick="choseCard(8)" name="8"> </div>
+                <div class="card" onclick="choseCard(9)" name="9"> </div>
+                <div class="card" onclick="choseCard(10)" name="10"> </div>
+                <div class="card" onclick="choseCard(11)" name="11"> </div>
+                <div class="card" onclick="choseCard(12)" name="12"> </div>
+                <div class="card" onclick="choseCard(13)" name="13"> </div>
+                <div class="card" onclick="choseCard(14)" name="14"> </div>
+                <div class="card" onclick="choseCard(15)" name="15"> </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Gallery</h3>
+          <ul>
+            <li><a href="#">Talk Shows</a></li>
+            <li><a href="#">Daily Draws</a></li>
+            <li><a href="#">Picks</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Written Works</h3>
+          <ul>
+            <li><a href="#">Trending</a></li>
+            <li><a href="#">Best selling</a></li>
+            <li><a href="#">Latest</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Newspaper Headlines</h3>
+          <ul>
+            <li><a href="#">Trending</a></li>
+            <li><a href="#">Recent</a></li>
+            <li><a href="#">Old</a></li>
+          </ul>
+        </div>
+        <div class="footer-section form">
+          <h3>Tarot Draws</h3>
+          <p>Subscribe to get your weekly free tarot draws ,major discounts and enter the world of mystery.</p>
+       <input type="email" placeholder="Enter your email address">
+       <button>Subscribe</button>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; Adit Alware
+      </div>
+    </footer>
+    <script>
+ 
+
+         let count=0;
+         let m=new Map();
+
+
+
+
+        function startDraw(){
+          document.getElementsByClassName("initial")[0].style.display="none";
+          document.getElementsByClassName("main")[0].style.display="block";
+          document.getElementsByClassName("heading")[0].innerHTML="Take a deep breath. Choose Any 5 cards from the deck";
+          document.getElementsByClassName("heading")[0].style.fontSize="75px";
+          document.getElementsByClassName("heading")[0].style.animation="bringdown 2s forwards";
+
+
+
+        }
+
+
+        function startLoading(){
+                document.getElementById("spin").style.display="none";
+                document.getElementsByClassName("pentagon")[0].style.animation="spin 10s,fade 10s forwards";
+                document.getElementsByClassName("fire")[0].style.animation="spin 10s,fade 10s forwards";
+                document.getElementsByClassName("water")[0].style.animation="spin 10s,fade 10s forwards";
+                document.getElementsByClassName("air")[0].style.animation="spin 10s,fade 10s forwards";
+                document.getElementsByClassName("earth")[0].style.animation="spin 10s,fade 10s forwards";
+        }
+        function choseCard(index){
+
+             if(count<5 && !m[String(index)]){
+              m[String(index)]=1;            
+
+            document.getElementsByClassName("card")[index-1].style.backgroundImage = "none";
+            var img = document.createElement('img');
+            img.src = `/assets/images/card${index}.jpg`;
+            img.width= "257";
+            img.height= "407";
+            img.setAttribute('onclick','bigImgView(this.src)');
+            document.getElementsByClassName("card")[index-1].appendChild(img);
+            document.getElementsByClassName("card")[index-1].style.animation = "moveup 2s forwards";
+            count+=1;
+
+            if(count==1){
+              document.getElementsByClassName("heading")[0].innerHTML="Focus on a question on your mind";
+            }
+            if(count<=4)
+            document.getElementsByClassName(`star${count}`)[0].style.display="block";
+             }
+            
+            if(count==5){
+              document.getElementsByClassName("heading")[0].innerHTML="Alright! Here we go!";
+
+                let cards=document.getElementsByClassName("card");
+                for(var i=0 ;i<15;i++)
+                 {
+                    if(m[cards[i].getAttribute("name")]!=1){
+                        cards[i].style.display="none";
+                    }
+                }
+                document.getElementsByClassName("pentagon")[0].style.display="block";
+                setTimeout(function(){
+                 document.getElementById("load").style.display="block";
+                }, 3000)
+                setTimeout(function(){
+                  window.location.href = 'draw.html';
+                }, 6000)
+               
+               
+
+
+
+            }
+
+
+
+        }
+
+
+                          
+                  let bigImgView = (imgSrc) => {
+
+                  // Making elements
+                  let divP = document.createElement('DIV');
+                  let spanC = document.createElement('SPAN');
+                  let imgC = document.createElement("IMG");
+
+                  // Setting attributes
+                  divP.setAttribute('class', 'bib-modal');
+                  spanC.setAttribute('class', 'bib-close');
+                  imgC.setAttribute('class', 'bib-modal-content');
+                  imgC.setAttribute('src', imgSrc);
+
+                  // Adding texts
+                  spanC.innerHTML = '&times;';
+
+                  // Handling events
+                  spanC.onclick = function(){
+                      this.parentElement.remove();
+                  }
+
+                  // Appending childs
+                  divP.appendChild(spanC);
+                  divP.appendChild(imgC);
+
+                  // Appending to body
+                  document.body.appendChild(divP);
+                  divP.style.display = 'block';
+                  console.log("Big image");
+
+                  }
+     
+       </script>
+  </body>
+  
+
+</html>
