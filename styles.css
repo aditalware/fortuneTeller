@@ -642,17 +642,35 @@ body::-webkit-scrollbar-thumb {
 }
 .footer-section input {
   border: 1px solid #84849d;
+  font-size: 20px;
   padding: 10px 25px;
   border-radius: 5px;
   margin-bottom: 15px;
+  outline:none;
+  height: 25px;
+  width: 250px;
+  
 }
 .footer-section button {
   padding: 12px 78px;
   color: white;
-  font-size: 15px;
-  background-color: #5d7cc5;
+  font-size: 25px;
+  background-color: rgb(21 24 5);;
   border: none;
   border-radius: 5px;
+  cursor: pointer;
+
+
+}
+.footer-section button:hover {
+  padding: 12px 78px;
+  color: black;
+  font-size: 25px;
+  background-color: rgb(255, 255, 255);;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
 }
 .footer-section li {
   list-style: none;
