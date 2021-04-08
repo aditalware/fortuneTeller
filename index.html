@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />       
 		<meta name="keywords" content="" />
     <meta
@@ -65,11 +64,11 @@
             </div>
 
             <div class="pentagon" onclick="startLoading()">
-              <h1 class="headstart" id="spin" style="line-height: 9; margin:0px 86px">Spin</h1>
+              <h1 class="headstart" id="spin" style="line-height: 4; margin:0px 16px"></h1>
             </div>
 
             <div class="loading" id="load" >
-              <img src="loading.gif" height="200" width="200" />
+              <img src="loading.gif" height="150" width="150" />
             </div>
             <div class="container">
                 <div class="card" onclick="choseCard(1)" name="1"> </div>
@@ -143,7 +142,7 @@
           document.getElementsByClassName("initial")[0].style.display="none";
           document.getElementsByClassName("main")[0].style.display="block";
           document.getElementsByClassName("heading")[0].innerHTML="Take a deep breath. Choose Any 5 cards from the deck";
-          document.getElementsByClassName("heading")[0].style.fontSize="75px";
+          document.getElementsByClassName("heading")[0].style.fontSize="40px";
           document.getElementsByClassName("heading")[0].style.animation="bringdown 2s forwards";
 
 
@@ -167,8 +166,8 @@
             document.getElementsByClassName("card")[index-1].style.backgroundImage = "none";
             var img = document.createElement('img');
             img.src = `card${index}.jpg`;
-            img.width= "257";
-            img.height= "407";
+            img.width= "135";
+            img.height= "192";
             img.setAttribute('onclick','bigImgView(this.src)');
             document.getElementsByClassName("card")[index-1].appendChild(img);
             document.getElementsByClassName("card")[index-1].style.animation = "moveup 2s forwards";
