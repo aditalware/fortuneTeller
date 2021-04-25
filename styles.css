@@ -16,7 +16,7 @@ body{
   background-image: url("dotted.svg");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 120vh;
+  height: 149vh;
   width: 100%;
 }
 body::-webkit-scrollbar {
@@ -727,9 +727,9 @@ body::-webkit-scrollbar-thumb {
 }
 
 .oval .type{
-  width: 282px;
-  height: 282px;
-  background-image: url("mystery.jfif");
+  width: 129px;
+  height: 129px;
+  background-image: url(mystery.jfif);
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 160px;
@@ -738,8 +738,9 @@ body::-webkit-scrollbar-thumb {
   animation-timing-function: linear;
   cursor: pointer;
   margin: auto;
-  margin-top: 106px;
+  margin-top: 41px;
   font-family: 'Dancing Script', cursive;
+
 
 }
 
@@ -764,30 +765,31 @@ body::-webkit-scrollbar-thumb {
 
 .lamp1{
   position: absolute;
-  top: 816px;
-  left: 100px;
-  width: 100px;
-  height: 100px;
+  top: 285px;
+  left: 226px;
+  width: 40px;
+  height: 40px;
   animation: lamp2 3s infinite;
   border-radius: 100px;
+
 }
 
 
 .lamp2{
   position: absolute;
-  top: 516px;
-  left: 350px;
-  width: 50px;
-  height: 50px;
+  top: 370px;
+  left: 68px;
+  width: 30px;
+  height: 30px;
   animation: lamp1 2s infinite;
   border-radius: 100px;
 }
 .lamp3{
   position: absolute;
-  top: 216px;
-  left: 750px;
-  width: 70px;
-  height: 70px;
+  top: 127px;
+  left: 308px;
+  width: 50px;
+  height: 50px;
   animation: lamp 1s infinite;
   border-radius: 100px;
 }
@@ -795,50 +797,49 @@ body::-webkit-scrollbar-thumb {
 
 .lamp4{
   position: absolute;
-  top: 1016px;
-  right: 140px;
-  width: 50px;
-  height: 50px;
-  animation: lamp 3s infinite;
-  border-radius: 100px;
+    top: 176px;
+    right: 140px;
+    width: 22px;
+    height: 22px;
+    animation: lamp 3s infinite;
+    border-radius: 100px;
 }
 
 
 .lamp5{
- 
   position: absolute;
-  top: 516px;
-  right: 350px;
-  width: 70px;
-  height: 70px;
+  top: 110px;
+  right: 343px;
+  width: 41px;
+  height: 40px;
   animation: lamp2 1s infinite;
   border-radius: 100px;
 }
 .lamp6{
   position: absolute;
-  top: 216px;
-  right: 750px;
-  width: 100px;
-  height: 100px;
+  top: 241px;
+  right: 237px;
+  width: 48px;
+  height: 48px;
   animation: lamp1 2s infinite;
   border-radius: 100px;
 }
 
 .lamp7{
   position: absolute;
-  top: 716px;
-  left: 550px;
-  width: 50px;
-  height: 50px;
+  top: 236px;
+  left: 128px;
+  width: 26px;
+  height: 26px;
   animation: lamp 4s infinite;
   border-radius: 100px;
 }
 .lamp8{
   position: absolute;
-  top: 816px;
-  right: 550px;
-  width: 100px;
-  height: 100px;
+  top: 345px;
+  right: 93px;
+  width: 27px;
+  height: 27px;
   animation: lamp 2s infinite;
   border-radius: 100px;
 }
